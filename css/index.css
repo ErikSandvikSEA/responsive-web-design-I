@@ -6,7 +6,7 @@
 	padding:0;
 	margin:0;
 	max-width:100%; /*this is saying you can never be bigger than your parent*/
-    border:1px solid red;
+    /* border:1px solid red; */
   }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -265,8 +265,8 @@ ul li{
 /* phone */
 @media (max-width: 500px){
     body{
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: 1%;
+        margin-right: 1%;
     }
     .links {
         display:flex;
@@ -279,12 +279,32 @@ ul li{
         justify-content: center;
         text-align: center;
         border-top: 1px solid slategray;
-        border-bottom: 1px solid slategray;
+        /* border-bottom: 1px solid slategray; */
         padding: 5% 0;
     }
-    .features-and-about{
+    #contact{
+        border-bottom: 1px solid slategray
+    }
+    .features-and-about, .services-product-vision{
         display: flex;
         flex-direction: column;
         width: 100%;
+    }
+    .features, .about, .services, .product, .vision{
+        width: 100%;
+        padding: 4% 0;
+    }
+    .copyright{
+        margin-top: 5%;
+    }
+    .top-of-article, .body{
+        margin: 0 2%;
+    }
+    footer, hr{
+        margin-left:  2%;
+        margin-right: 2%;
+    }
+    .phone-number{
+        margin: 2% 0;
     }
 }
