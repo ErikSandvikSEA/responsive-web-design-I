@@ -264,5 +264,27 @@ ul li{
 
 /* phone */
 @media (max-width: 500px){
-    
+    body{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .links {
+        display:flex;
+        flex-direction: column;
+       ;
+    }
+    .links a{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        border-top: 1px solid slategray;
+        border-bottom: 1px solid slategray;
+        padding: 5% 0;
+    }
+    .features-and-about{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 }
