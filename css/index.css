@@ -6,7 +6,7 @@
 	padding:0;
 	margin:0;
 	max-width:100%; /*this is saying you can never be bigger than your parent*/
-    /* border:1px solid grey; */
+    border:1px solid red;
   }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -112,11 +112,11 @@ header nav{
 	display: flex;
 	justify-content: space-between;
 	padding: 4% 0;
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
 }
-.services{
+/* .services{
 	width:31%;
-}
+} */
 .product{
 	width: 31%;
 }
@@ -141,10 +141,10 @@ address{
 	width: 100%;
 }
 .services{
-	width:100%;
+	width:31%;
 	display: flex;
 	flex-direction: column;
-	margin: 2% 0;
+	/* margin: 2% 0; */
 }
 .services-body, .vision-body{
 	display: flex;
@@ -229,4 +229,40 @@ ul li{
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
+}
+
+/* tablet */
+@media (max-width: 800px){
+    html{
+        margin: 0;
+    }
+    nav{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .links{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 4% 0;
+    }
+    .code-snippet-pic img{
+        display: none;
+    }
+    .slogan-and-get-started{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5%;
+    }
+    .top-of-article{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+/* phone */
+@media (max-width: 500px){
+    
 }
